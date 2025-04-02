@@ -9,12 +9,39 @@
 </head>
 <body>
 
+    <!-- Main container for the application -->
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header>
+            <h1>Flashify - Smart Flashcards</h1>
+        </header>
 
+        <!-- Flashcard Creation Form -->
+        <section class="form-section">
+            <form id="flashcard-form">
+                <!-- Question Input Field -->
+                <label for="question">Question:</label>
+                <input type="text" id="question" placeholder="Enter question" required>
+                
+                <!-- Answer Input Field -->
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" placeholder="Enter answer" required>
+                
+                <!-- Submit Button to Add Flashcard -->
+                <button type="submit">Add Flashcard</button>
+            </form>
+        </section>
 
+        <!-- Flashcards Display Section -->
+        <section id="flashcard-list">
+            <h2>Your Flashcards</h2>
+            <!-- Flashcards will be displayed here -->
+        </section>
 
-
-
-
+        <!-- Button to Clear All Flashcards -->
+        <button id="clear-btn">Clear All Flashcards</button>
+    </div>
     
     <!-- linking js -->
      <script src="/index.js"></script>
